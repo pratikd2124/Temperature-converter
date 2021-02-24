@@ -45,6 +45,9 @@ section #convert{
     border: 10px solid 2a76f1;
     
 }
+footer{
+    padding: 2rem;
+}
 footer p{
     position: absolute;
     padding: 2rem;
