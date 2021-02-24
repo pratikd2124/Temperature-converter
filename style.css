@@ -46,7 +46,7 @@ section #convert{
     
 }
 footer p{
-    position: absolute;
+    position: fixed;
     bottom: 1%; right: 1%;
     font-family: Arial, Helvetica, sans-serif;
     }
