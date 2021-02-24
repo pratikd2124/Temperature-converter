@@ -10,6 +10,7 @@ section{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 90px;
     width: 250px;
     background-color: rgb(189, 209, 252);
     border-radius: 10px;
@@ -47,7 +48,8 @@ section #convert{
 }
 
 footer p{
+    padding-top: 2rem;
     position: absolute;
-    bottom: 1%; right: 1%;
+    right: 1%;
     font-family: Arial, Helvetica, sans-serif;
     }
