@@ -34,13 +34,18 @@ const kel_to_fahr = (kelvin) => {
 const btn = document.getElementById('convert');
 
 btn.addEventListener("click",function(){
-    document.getElementById("cls").value ;
-    document.getElementById("fhr").value;
-    document.getElementById("kvn").value;
+    if (document.getElementById("fhr").value !== ""){
+        document.getElementById("cls").value = fahr_to_cel();
+        document.getElementById("kvn").value = fahr_to_kel();
+    }
+    else if(document.getElementById("cls").value !== ""){
+        document.getElementById("fhr").value = cel_to_fahr();
+        document.getElementById("kvn").value = cel_to_kelvin();
+    }
+    else{
+        document.getElementById("cls").value = kelvin_to_cel();
+        document.getElementById("fhr").value = kel_to_fahr();
+    }
+    
 
 });
-//function cel_to_fahr(celsius){
-  //  var ctemp = celsius;
-    //var ctofahr = (ctemp * 9/5) +32;
-    
-//}
