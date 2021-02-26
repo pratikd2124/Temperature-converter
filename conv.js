@@ -11,11 +11,12 @@ const cel_to_fahr = (celsius) => {
 }
 const cel_to_kelvin = (celsius) => {
     celsius = document.getElementById("cls").value;
-    var ctokel = celsius + 273.15;
+    var ctokel = parseFloat(celsius) + 273.15;
     return ctokel;
 }
 
 const kelvin_to_cel = (kelvin) => {
+    kelvin = document.getElementById("kvn").value;
     var keltocel = kelvin - 273.15;
     return keltocel;
 }
@@ -26,8 +27,8 @@ const fahr_to_kel = (fahrenhit) => {
     return fahrtokel;
 }
 const kel_to_fahr = (kelvin) => {
-    var keltoc = kelvin_to_cel(kelvin);
-    var keltofahr = cel_to_fahr(keltoc);
+    kelvin = document.getElementById("kvn").value;
+    var keltofahr = (kelvin - 273.15) * 9/5 + 32;
     return keltofahr;
 }
 
@@ -49,8 +50,3 @@ btn.addEventListener("click",function(){
     
 
 });
-//function cel_to_fahr(celsius){
-  //  var ctemp = celsius;
-    //var ctofahr = (ctemp * 9/5) +32;
-    
-//}
